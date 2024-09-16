@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hayek WTR</title>
+    <link rel="icon" type="image/x-icon" href="images/Hlogo.ico">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+        html {
+            font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+</head>
+
+<body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
+    style="background-image: url('header.png');">
+    <div class="h-full">
+        <!--Nav-->
+        <div class="w-full container mx-auto">
+            <div class="w-full flex items-center justify-between">
+                <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                    href="#">
+                    Welcome,&nbsp;<span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">User</span>
+                </a>
+
+                <div class="flex w-1/2 justify-end content-center">
+                    <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                        href="https://www.linkedin.com/in/ala-a-el-hayek-179055222/">
+                        <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Left Col-->
+            <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+                <h1
+                    class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                    Ala'a El -
+                    <span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+                        Hayek<br><br>
+                    </span>
+                    Software Engineer
+                </h1>
+                <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+                    University of Guelph CCS Web Development Solutions
+                </p>
+
+            </div>
+
+            <!--Right Col-->
+            <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+                <img class="mx-auto w-full md:w-6/12 transform -rotate-6 transition hover:scale-100 duration-700 ease-in-out hover:rotate-6"
+                    src="images/HayekSuit.png" />
+            </div>
+
+            <div class="mx-auto md:pt-16">
+                <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
+                </div>
+                <!-- component -->
+                <div class=" text-blue-400 text-xl font-bold m-5 text-center">Use Keyboard Arrow Keys To Go Left And
+                    Right</div>
+
+                <div class="gallery border-2 rounded-xl mx-auto m-5 bg-gray-800" style="width:1000px;">
+                    <div class="top flex p-2 border-b select-none">
+                        <div class="heading text-gray-300 w-full pl-3 font-semibold my-auto"></div>
+                        <div class="buttons ml-auto flex text-gray-600 mr-1">
+                            <svg action="prev" class="w-7 border-2 rounded-l-lg p-1 cursor-pointer border-r-0"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path action="prev" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            </svg>
+                            <svg action="next" class="w-7 border-2 rounded-r-lg p-1 cursor-pointer"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path action="next" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="content-area w-full h-96 overflow-hidden">
+                        <div class="platform shadow-xl h-full flex">
+                            <!-- frame start -->
+                            <div class="each-frame border-box flex-none h-full" title="Maple Lodge Farms">
+                                <!-- title shows in top -->
+                                <!-- this is full editable area -->
+                                <div class="main flex w-full p-8">
+                                    <div class="sub w-4/6 my-auto">
+                                        <img class="w-full p-8" src="images/MapleLodgeLogo.png" alt="">
+                                    </div>
+                                    <div class="sub w-full my-auto">
+                                        <div class="head text-3xl font-bold mb-4">IT Co-op</div>
+                                        <div class="text-gray-300 long-text text-base">Maple Lodge Farms, Canada's top
+                                            chicken processor, excels in raw and prepared chicken products. They harness
+                                            Computer Science for factory operations, website upkeep, and internal
+                                            ticketing. Networking, overseen by .Net and C# specialists, is vital. I
+                                            collaborated with Information Services experts, updating scripts and
+                                            revamping the production website. Situated in Brampton at 8301 Winston
+                                            Churchill Blvd, Maple Lodge Farms retains its historical roots. Offering a
+                                            variety of products, from raw chicken to snacks, the company fosters a
+                                            close-knit workplace, with shared amenities which allowed for regular CEO
+                                            and VP
+                                            sightings!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- frame end -->
+
+                            <div class="each-frame border-box flex-none h-full" title="Camis">
+                                <!-- title shows in top -->
+                                <!-- this is full editable area -->
+                                <div class="main flex w-full p-8">
+                                    <div class="sub w-4/6 my-auto">
+                                        <img class="w-full p-8" src="images/CamisLogo.png" alt="">
+                                    </div>
+                                    <div class="sub w-full my-auto">
+                                        <div class="head text-3xl font-bold mb-4">Quality Assurance Co-op</div>
+                                        <div class="text-gray-300 long-text text-base">Camis, Canada's leading provider
+                                            of outdoor reservation and park management solutions, collaborates with 725+
+                                            government-operated facilities. Their expertise lies in software and web
+                                            system development, catering to client needs. They leverage Software
+                                            Engineering for website and park management software development, alongside
+                                            internal ticketing. My team conducted routine tests and maintenance. I aided
+                                            in bug reporting,
+                                            reproduction, and general maintenance. Located at 130 Research Ln in Guelph,
+                                            Camis experienced a seamless transition after founder Doug Hall's
+                                            retirement, under Banyan Software's leadership. My tenure at Camis was truly
+                                            exceptional.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- frame end -->
+
+                            <div class="each-frame border-box flex-none h-full" title="University of Guelph">
+                                <!-- title shows in top -->
+                                <!-- this is full editable area -->
+                                <div class="main flex w-full p-8">
+                                    <div class="sub w-4/6 my-auto">
+                                        <img class="w-full p-8" src="images/UofGLogo.png" alt="">
+                                    </div>
+                                    <div class="sub w-full my-auto">
+                                        <div class="head text-3xl font-bold mb-4">Website Training & Support Specialist
+                                        </div>
+                                        <div class="text-gray-300 long-text text-base">At the University of Guelph,
+                                            based in the University Center (UC), I'm part of a team focused on enhancing
+                                            the institution's digital infrastructure. We handle web development,
+                                            maintenance, and support, ensuring seamless operations across critical
+                                            systems like website management and internal ticketing. Collaborating with
+                                            colleagues from diverse backgrounds, we uphold the university's commitment
+                                            to academic excellence and innovation. The campus embodies a rich history of
+                                            academic achievement and community
+                                            engagement.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- frame end -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <style>
+                    .platform {
+                        position: relative;
+                        transition: right 0.3s;
+                    }
+
+                    .body {
+                        background-color: white !important;
+                    }
+                </style>
+
+                <script>
+                    function gallery() {
+                        this.index = 0;
+                        this.load = function () {
+                            this.rootEl = document.querySelector(".gallery");
+                            this.platform = this.rootEl.querySelector(".platform");
+                            this.frames = this.platform.querySelectorAll(".each-frame");
+                            this.contentArea = this.rootEl.querySelector(".content-area");
+                            this.width = parseInt(this.rootEl.style.width);
+                            this.limit = { start: 0, end: this.frames.length - 1 };
+                            this.frames.forEach(each => { each.style.width = this.width + "px"; });
+                            this.goto(this.index);
+                        }
+                        this.set_title = function () { this.rootEl.querySelector(".heading").innerText = this.frames[this.index].getAttribute("title"); }
+                        this.next = function () { this.platform.style.right = this.width * ++this.index + "px"; this.set_title(); }
+                        this.prev = function () { this.platform.style.right = this.width * --this.index + "px"; this.set_title(); }
+                        this.goto = function (index) { this.platform.style.right = this.width * index + "px"; this.index = index; this.set_title(); }
+                        this.load();
+                    }
+                    var G = new gallery();
+                    G.rootEl.addEventListener("click", function (t) {
+                        var val = t.target.getAttribute("action");
+                        if (val == "next" && G.index != G.limit.end) { G.next(); }
+                        if (val == "prev" && G.index != G.limit.start) { G.prev(); }
+                        if (val == "goto") {
+                            let rv = t.target.getAttribute("goto");
+                            rv = rv == "end" ? G.limit.end : rv;
+                            G.goto(parseInt(rv));
+                        }
+                    });
+                    document.addEventListener("keyup", function (t) {
+                        var val = t.keyCode;
+                        if (val == 39 && G.index != G.limit.end) { G.next(); }
+                        if (val == 37 && G.index != G.limit.start) { G.prev(); }
+                    });
+
+                    // run G.load() if new data loaded with ajax
+
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.querySelectorAll('[data-accordion-target]').forEach(item => {
+                            item.addEventListener('click', function () {
+                                const accordionItem = this.getAttribute('data-accordion-target');
+                                document.querySelector(accordionItem).classList.toggle('hidden');
+                            });
+                        });
+                    });
+
+
+                </script>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center">
+            <div id="accordion-nested-parent" data-accordion="collapse" class="bg-gray-800 text-gray-300"
+                style="display: block; width: 1000px;">
+                <div id="accordion-nested-parent" data-accordion="collapse" class="bg-gray-800 text-gray-300"
+                    style="display: block; width: 1000px;">
+                    <!-- Section 1: Maple Lodge Farms -->
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <span>Maple Lodge Farms - S22</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <!-- Nested accordion for Maple Lodge Farms -->
+                            <div id="accordion-nested-collapse-1" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-1">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 rounded-t-xl font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-1" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-1">
+                                        <span>Role</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-1" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-1">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">During the work term, I will be
+                                            responsible for providing software application support, offering day-to-day
+                                            assistance for a range of 3rd party vendor software applications utilized by
+                                            different business groups. This will involve investigating and debugging
+                                            reported issues, as well as conducting routine maintenance and
+                                            administration
+                                            tasks on the supported applications. Additionally, I will be tasked with
+                                            modifying or building customizations within certain applications and
+                                            ensuring
+                                            the maintenance of support documentation. Furthermore, I will be resolving
+                                            client queries and issues through ticketing software such as ZenDesk, and
+                                            deploying patches and enhancements while adhering to standard change
+                                            management
+                                            procedures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion for Maple Lodge Farms -->
+
+                            <!-- Nested accordion 2 for Maple Lodge Farms -->
+                            <div id="accordion-nested-collapse-2" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-2">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-2" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-2">
+                                        <span>Requirements</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-2" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-2">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">My employer required me to possess
+                                            strong integrity and accountability, value feedback as a learning tool,
+                                            understand and support Object-Oriented Relational Database Management
+                                            Systems,
+                                            as well as needs related to T-SQL (Transact Structured Query Language) for
+                                            Microsoft SQL Server. Knowledge of JavaScript and HTML was essential,
+                                            alongside
+                                            familiarity with Microsoft Power Apps and Power BI, or a willingness to
+                                            learn.
+                                            Motivation to achieve superior results, effective decision-making skills, an
+                                            innovative mindset with a "can do" attitude, and the ability to collaborate
+                                            effectively with a team were also necessary. Proficiency in various computer
+                                            applications such as Excel, Word, PowerPoint, and Outlook, coupled with
+                                            strong
+                                            analytical and problem-solving skills, rounded out the required skill set.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 2 for Maple Lodge Farms -->
+
+                            <!-- Nested accordion 3 for Maple Lodge Farms -->
+                            <div id="accordion-nested-collapse-3" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-3">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-3" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-3">
+                                        <span>Tasks</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-3" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-3">
+                                    <div class="p-5 border border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">I worked on two main projects,
+                                            namely
+                                            "Reports Update" and "New Website." Due to confidentiality, some details may
+                                            be
+                                            omitted from the following description. Initially, I focused on updating a
+                                            reporting script on our UniVerse production server. The challenge was to
+                                            ensure
+                                            that the exported Excel spreadsheet reports met the requirements for input
+                                            into
+                                            another system we utilized. This involved modifying the script to
+                                            incorporate
+                                            different headers, columns, and data names. Throughout this project, I
+                                            maintained communication with the client who requested the changes and
+                                            sought
+                                            assistance from my supervisor or colleagues when needed. The second project
+                                            involved upgrading all our internal company sites to achieve a more modern
+                                            look
+                                            and feel, along with enhancing the backend for responsiveness. My role in
+                                            this
+                                            project primarily revolved around the front-end, where I contributed to
+                                            designing and developing the website's appearance (UI). In addition to these
+                                            projects, I also addressed and resolved tickets submitted by employees
+                                            regarding
+                                            issues with our systems using the ZenDesk platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 3 for Maple Lodge Farms -->
+                        </div>
+                    </div>
+                    <!-- End: Section 1: Maple Lodge Farms -->
+
+                    <!-- Section 2: Camis -->
+                    <h2 id="accordion-collapse-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                            <span>Camis - F22</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 border border-gray-200 dark:border-gray-700">
+                            <!-- Nested accordion for Camis -->
+                            <div id="accordion-nested-collapse-4" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-4">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 rounded-t-xl font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-4" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-4">
+                                        <span>Role</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-4" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-4">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">As a QA Co-Op at Camis, I conducted
+                                            routine testing of software and web applications, reported bugs,
+                                            investigated
+                                            customer-reported issues, suggested system improvements, and collaborated
+                                            with
+                                            teams to solve problems. I also designed and executed test plans to meet
+                                            company
+                                            and client standards, and tested new features before production deployment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion for Camis -->
+
+                            <!-- Nested accordion 2 for Camis -->
+                            <div id="accordion-nested-collapse-5" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-5">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-5" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-5">
+                                        <span>Requirements</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-5" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-5">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">I was
+                                            tasked with several responsibilities aimed at ensuring software quality.
+                                            This
+                                            included conducting manual regression testing for release cycles, verifying
+                                            tickets fixed for releases, and assisting with client UAT feedback.
+                                            Additionally, I was involved in designing and implementing test plans and
+                                            procedures, administering testing processes, and coordinating testing
+                                            efforts
+                                            among team members. Furthermore, I actively participated in product delivery
+                                            team meetings and carried out tasks assigned by superiors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 2 for Camis -->
+
+                            <!-- Nested accordion 3 for Camis -->
+                            <div id="accordion-nested-collapse-6" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-6">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-6" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-6">
+                                        <span>Tasks</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-6" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-6">
+                                    <div class="p-5 border border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">Using these methods, I focused on
+                                            two
+                                            primary tasks: routine maintenance testing and bug reproduction. In routine
+                                            regression tests, my objective was to ensure that both our software and
+                                            webpages
+                                            met our standards by conducting thorough assessments. Typically, this
+                                            occurred
+                                            following the planning of significant updates intended for our client sites
+                                            or
+                                            software. Initially, updates were implemented in our UAT environment, where
+                                            I
+                                            performed routine testing. Upon confirming that all existing and new
+                                            features
+                                            functioned as intended, we proceeded to deploy the update to the production
+                                            environment. Regarding bug reproduction, I addressed customer or
+                                            client-generated tickets reporting bugs. Usually, the developer team had
+                                            already
+                                            identified and resolved the issue, and my role involved verifying that the
+                                            fix
+                                            was effective and ready for production deployment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 3 for Camis -->
+                        </div>
+                    </div>
+                    <!-- End: Section 2: Camis -->
+
+                    <!-- Section 3: University of Guelph -->
+                    <h2 id="accordion-collapse-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <span>University of Guelph - W24 to S24</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                        <div class="p-5 border border-gray-200 dark:border-gray-700">
+                            <!-- Nested accordion for University of Guelph -->
+                            <div id="accordion-nested-collapse-7" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-7">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 rounded-t-xl font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-7" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-7">
+                                        <span>Role</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-7" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-7">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">
+                                            I conduct training sessions for clients on Content Hub, Drupal, and
+                                            SharePoint via Microsoft Teams, providing comprehensive guidance on their
+                                            usage. Additionally, I facilitate group in-person training sessions for new
+                                            summer co-op students. Utilizing the Footprints ticket manager, I
+                                            efficiently manage and resolve client issues, ensuring timely and effective
+                                            solutions. Occasionally, I meet with clients in person to provide
+                                            personalized assistance and help resolve their issues. Furthermore, I create
+                                            CampusPress sites, a version of WordPress, tailored to meet the specific
+                                            needs of our clients. I always make myself available to offer support and
+                                            assistance whenever needed, ensuring smooth operations and client
+                                            satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion for University of Guelph -->
+
+                            <!-- Nested accordion 2 for University of Guelph -->
+                            <div id="accordion-nested-collapse-8" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-8">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-8" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-8">
+                                        <span>Requirements</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-8" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-8">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">In my role, I am required to deliver
+                                            ongoing platform training and support to campus website customers using
+                                            Drupal,
+                                            Content Hub, and SharePoint, while also maintaining and enhancing current
+                                            platform documentation, release notes, and training materials. Additionally,
+                                            I audit websites for web accessibility problems and collaborate with web
+                                            developers and campus customers to rectify them, provide website and content
+                                            management support for our campus clients by resolving their issues or
+                                            addressing their concerns, participate in our weekly Agile Scrum development
+                                            process, handle project requests from clients to change, design, and
+                                            customize websites, and answer queries and resolve issues for clients, among
+                                            other duties as assigned.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 2 for University of Guelph -->
+
+                            <!-- Nested accordion 3 for University of Guelph -->
+                            <div id="accordion-nested-collapse-9" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-9">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-9" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-9">
+                                        <span>Tasks</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-9" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-9">
+                                    <div class="p-5 border border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-300 dark:text-gray-300">In my role, I undertake two primary
+                                            tasks: training clients and providing support. When training clients, I
+                                            guide them through various platforms such as Content Hub, Drupal, and
+                                            SharePoint, leveraging tools like Microsoft Teams for effective remote
+                                            training sessions. Moreover, I organize group training sessions for new
+                                            summer co-op students, ensuring a smooth onboarding process. In addition to
+                                            training, I offer comprehensive support to clients, utilizing tools like the
+                                            Footprints ticket manager to efficiently manage and address client issues. I
+                                            also engage in personal meetings with clients to provide tailored assistance
+                                            and resolve any concerns they may have. By combining proactive training
+                                            initiatives with dedicated support efforts, I contribute to the seamless
+                                            operation of our services and ensure client satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Nested accordion 3 for University of Guelph -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Section 3: University of Guelph -->
+                <!-- start here Goals-->
+                <h2 id="accordion-collapse-heading-21">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                        data-accordion-target="#accordion-collapse-body-21" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-21">
+                        <span>Goals</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-21" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-300 dark:text-gray-400">These are the goals I strived to achieve this
+                            term:<br><br>
+
+                            Enhancing written communication skills by composing effective emails and messages.
+                            Responsibilities such as managing tickets and engaging with customers provide opportunities
+                            for refinement. Success will be reached when proficiently writing professional
+                            emails/messages.<br><br>
+
+                            Improving professional and ethical behavior through personal organization and time
+                            management. Implementation of a detailed task management system, daily schedule creation,
+                            and meeting deadlines are key. Success entails consistent meeting of deadlines and positive
+                            feedback on work organization.<br><br>
+
+                            Strengthening critical and creative thinking by enhancing problem-solving skills. Active
+                            engagement in problem-solving during trainings, seeking mentorship, and proposing creative
+                            solutions are strategies. Success will be evident in effective contribution to resolving
+                            complex issues and positive feedback on problem-solving approaches.<br><br>
+
+                            Acquiring and applying project management skills effectively in the placement. Participation
+                            in project management meetings, collaboration with experienced project managers, and
+                            successful completion of projects within timelines are actions. Success is measured by the
+                            application of learned project management skills and acknowledgment from project manager and
+                            team members.<br><br>
+
+                            Developing leadership skills to exhibit professional and ethical growth. Active
+                            participation in team projects, taking on leadership roles, and seeking mentorship
+                            contribute. Success is demonstrated through effective leadership in achieving team goals and
+                            personal growth in leadership skills.</p>
+                    </div>
+                </div>
+                <!--end here goals-->
+                <!-- start here Goals-->
+                <h2 id="accordion-collapse-heading-22">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-300 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                        data-accordion-target="#accordion-collapse-body-22" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-22">
+                        <span>Conclusions & Acknowledgements</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-22" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-300 dark:text-gray-400">My work term at the University of Guelph has
+                            been a fulfilling experience filled with learning, camaraderie, and personal growth. From
+                            day one, I've been welcomed into a supportive community of colleagues and students, where
+                            I've had the opportunity to freely express myself and engage in meaningful discussions.
+
+                            Throughout my time here, I've had the chance to explore various aspects of university
+                            operations, from the back-end of our websites, to supporting faculty. This hands-on
+                            experience has
+                            broadened my understanding of higher education and provided me with valuable insights into
+                            how universities function.
+
+                            I've approached my work with a focus on initiative, adaptability, and effective time
+                            management, aiming to make the most of every opportunity. Along the way, I've developed my
+                            skills and discovered new interests, reaffirming my passion for education and learning.
+
+                            One of the most valuable aspects of this experience has been the relationships I've formed
+                            with my supervisors and colleagues. Their guidance and support have been instrumental in my
+                            growth and development, and I'm grateful for the opportunity to learn from their expertise.
+
+                            As I reflect on my time at the University of Guelph, I'm grateful for the lessons learned
+                            and the friendships formed. This experience has provided me with a solid foundation for my
+                            future endeavors, and I'm excited to see where my journey takes me next.<br><br> I just want
+                            to finish by acknowledging my amazing team this semester, including Vinod, Craig, Miranda,
+                            Joy, Lalit, Tanya, An, Linda, Scott, and more! Thank you for this amazing work term, and I
+                            look forward to our next 4 months together!</p>
+                    </div>
+                </div>
+                <!--end here goals-->
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+            <a class="text-gray-300 no-underline hover:no-underline" href="#">&copy; Hayek 2024</a>
+            - Powered by
+            <a class="text-gray-300 no-underline hover:no-underline" href="https://www.tailwindcss.com">Tailwind</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
